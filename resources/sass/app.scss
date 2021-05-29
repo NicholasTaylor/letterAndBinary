@@ -1,0 +1,35 @@
+html, body {
+    font-size: 100%;
+}
+
+.l-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #1a202c;
+    color: white;
+    line-height: 1;
+    position: relative;
+    z-index: 100;
+}
+
+.c-intro {
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    z-index: 110;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &__headline {
+        font-family: itc-avant-garde-gothic-pro;
+        text-transform: uppercase;
+        font-variant-ligatures: discretionary-ligatures;
+        -moz-font-feature-settings: "dlig";
+        -webkit-font-feature-settings: "dlig";
+        font-feature-settings: "dlig";
+        font-size: 2.5rem;
+        font-smooth: always;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
