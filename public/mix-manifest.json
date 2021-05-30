@@ -1,5 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/bootstrap-reboot.min.css": "/css/bootstrap-reboot.min.css",
-    "/css/app.css": "/css/app.css"
+    "/css/nav.css": "/css/nav.css",
+    "/css/app.css": "/css/app.css",
+    "/img/afternoon-sky.gif": "/img/afternoon-sky.gif",
+    "/img/time-lapse-roof.mov": "/img/time-lapse-roof.mov"
 }
