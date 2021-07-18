@@ -15,12 +15,19 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body class="antialiased">
+        <div class="l-topBg">
+        </div>
         <div aria-hidden="true" class="l-navicon">
             <svg class="c-navicon" data-name="c-navicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 21">
                 <line class="c-navicon__line c-navicon__linetop" y1="0.5" x2="26" y2="0.5" />
                 <line class="c-navicon__line c-navicon__linemiddle" y1="10.5" x2="26" y2="10.5" />
                 <line class="c-navicon__line c-navicon__linebottom" y1="20.5" x2="26" y2="20.5" />
             </svg>
+        </div>
+        <div class="l-logo">
+            <div class="c-logo">
+                Un Coupe de Destin
+            </div>
         </div>
         <nav class="l-nav">
             <div class="c-nav">
@@ -49,7 +56,7 @@
                     <div class="l-intro__horizontal l-intro__horizontal--center">
                         <div class="l-intro__vertical l-intro__vertical--bottom">
                             <div class="c-intro__headline">
-                                This is a headline.
+                                This Is A Headline
                             </div>
                             <div class="c-intro__date">
                                 2021.05.30 14.13
@@ -62,15 +69,14 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="c-intro__bg">
+                <div class="c-intro__bg">
                     <video muted autoplay loop playsinline class="c-intro__bgAsset">
                         <source src="{{ asset('img/time-lapse-roof.mov') }}" type="video/mp4" />
                     </video>
-                </div>-->
-                <div class="c-intro__bg">
-                    <img src="{{ asset('img/afternoon-sky.gif') }}" class="c-intro__bgAsset">
-                    </video>
                 </div>
+                <!--<div class="c-intro__bg">
+                    <img src="{{ asset('img/afternoon-sky.gif') }}" class="c-intro__bgAsset" />
+                </div>-->
                 <div class="c-intro__screen">
                 </div>
             </div>
@@ -78,15 +84,27 @@
                 <p>
                     I'm baby tofu cronut cardigan, vexillologist health goth hella gastropub cliche photo booth kogi ugh. Godard pinterest raw denim, kinfolk roof party jean shorts cornhole readymade truffaut. Keffiyeh bicycle rights tofu thundercats tote bag portland raw denim ethical shabby chic etsy. Pitchfork helvetica stumptown asymmetrical.
                 </p>
+                <div class="c-content__imgDiv">
+                    <img src="{{ asset('img/672ye1wud3r51.png') }}" class="c-content__img--sm" />
+                </div>
                 <p>
                     Everyday carry dreamcatcher ugh direct trade poke, aesthetic food truck. Put a bird on it plaid everyday carry occupy post-ironic vinyl four loko venmo fingerstache meh authentic tofu drinking vinegar man braid activated charcoal. Gluten-free kitsch chia mumblecore waistcoat banjo aesthetic church-key. Intelligentsia vexillologist scenester la croix, drinking vinegar twee neutra affogato irony put a bird on it cliche ugh kombucha chia farm-to-table. Quinoa crucifix poke, VHS ugh portland meggings post-ironic pok pok craft beer.
                 </p>
+                <div class="c-content__imgDiv">
+                    <img src="{{ asset('img/cxd8bfpgke251.png') }}" class="c-content__img c-content__img--med" />
+                </div>
                 <p>
                     Mumblecore fam meh master cleanse schlitz, vape meggings. Pork belly mlkshk helvetica poutine aesthetic scenester. Butcher cred snackwave, street art vice succulents yr keytar. 90's post-ironic neutra hella, marfa four loko poke distillery kogi PBR&B glossier.
                 </p>
+                <div class="c-content__imgDiv">
+                    <img src="{{ asset('img/eqhlkjhh1p151.jpg') }}" class="c-content__img c-content__img--lg" />
+                </div>
                 <p>
                     Fashion axe neutra fanny pack, trust fund chambray craft beer la croix gastropub kombucha brunch seitan umami jean shorts squid prism. Af offal wolf meditation meh activated charcoal cardigan bitters DIY chicharrones. Af hell of la croix post-ironic shabby chic tumblr, affogato hoodie enamel pin schlitz blog. Helvetica wayfarers vaporware, direct trade irony tumblr fam blue bottle glossier master cleanse polaroid trust fund. Raw denim gochujang la croix cred polaroid. 8-bit try-hard put a bird on it squid VHS.
                 </p>
+                <div class="c-content__imgDiv">
+                    <img src="{{ asset('img/m23bwh4n0x151.png') }}" class="c-content__img c-content__img--full" />
+                </div>
                 <p>
                     Hot chicken humblebrag coloring book deep v echo park asymmetrical cray woke vinyl drinking vinegar. Glossier succulents unicorn raclette readymade quinoa. Church-key wolf adaptogen bitters subway tile direct trade. Blog yr XOXO health goth pop-up, migas +1 crucifix. Yuccie intelligentsia you probably haven't heard of them kogi, keffiyeh skateboard disrupt cred knausgaard squid small batch prism fanny pack banh mi kinfolk. Man bun hammock salvia quinoa hot chicken.
                 </p>
