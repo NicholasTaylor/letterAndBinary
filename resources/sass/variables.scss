@@ -1,5 +1,5 @@
 $fontStackSystem: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$fontStackDefault: 'Inter', $fontStackSystem;
+$fontStackDefault: ibm-plex-sans, 'Inter', $fontStackSystem;
 $fontStackTitle: urw-din, 'itc-avant-garde-gothic-pro', 'futura-pt', futura, helevetica, arial, sans-serif;
 
 @mixin ui-important {

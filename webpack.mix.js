@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const path = require('path');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,8 +12,18 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.webpackConfig({
+    resolve: {
+        alias: {
+            'react' : path.resolve('node_modules/react'),
+            'react-dom' : path.resolve('node_modules/react-dom'),
+            'components' : path.resolve('resources/js/src/components'),
+        }
+    }
+})
+
 mix.copyDirectory('resources/img','public/img')
-    .js('resources/js/app.js', 'public/js')
+    .js('resources/js/app.js', 'public/js').react()
     .css('resources/css/bootstrap-reboot.min.css', 'public/css')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/nav.scss', 'public/css')
