@@ -2,6 +2,7 @@ import React, { Children } from 'react';
 /** @jsxRuntime classic */
 /** @jsx jsx */;
 import { css, jsx } from '@emotion/react';
+import { fontSize, fontStack, fontStackTitle } from '../styleConstants';
 
 export default function PostIntro({children}){
     return(
@@ -10,8 +11,36 @@ export default function PostIntro({children}){
                 width: 100%;
                 min-height: 100vh;
                 position: relative;
+                color: white;
             `}
         >
+            <div
+                css={css`
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 90;
+                    overflow: hidden;
+                    video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                `}
+            >
+                <video 
+                    muted 
+                    autoPlay 
+                    loop 
+                    playsInline
+                >
+                    <source 
+                        src="../img/time-lapse-roof.mov" 
+                        type="video/mp4" 
+                    />
+                </video>
+            </div>
             <div
                 css={css`                
                     position: relative;
@@ -38,26 +67,26 @@ export default function PostIntro({children}){
                             top: 90vh;
                             transform: translateY(-100%);
                             h1 {
-                                font-family: urw-din, 'itc-avant-garde-gothic-pro', 'futura-pt', futura, helevetica, arial, sans-serif;
+                                font-family: ${fontStackTitle};
                                 font-smooth: always;
                                 -webkit-font-smoothing: antialiased;
                                 -moz-osx-font-smoothing: auto;
                                 font-weight: 600;
-                                font-size: 2.5rem;
+                                font-size: ${fontSize[6]};
                                 line-height: .85;
                             }
                             h2 {
-                                font-family: urw-din, 'itc-avant-garde-gothic-pro', 'futura-pt', futura, helevetica, arial, sans-serif;
+                                font-family: ${fontStackTitle};
                                 font-smooth: always;
                                 -webkit-font-smoothing: antialiased;
                                 -moz-osx-font-smoothing: auto;
                                 font-weight: 100;
-                                font-size: 1.5rem;
+                                font-size: ${fontSize[4]};
                             }
                             p {
-                                font-family: ibm-plex-sans, 'Inter', $fontStackSystem;
+                                font-family: ${fontStack};
                                 border-top: 1px dotted white;
-                                font-size: 1rem;
+                                font-size: ${fontSize[2]};
                                 line-height: 1.1;
                                 margin: .75em 0 0 0;
                                 padding: .75em 0 0 0;
